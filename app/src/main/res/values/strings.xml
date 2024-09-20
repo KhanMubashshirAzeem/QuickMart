@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E_Com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">"The issue you're facing is because you're trying to use the method setOnQueryTextListener on a SearchBar widget instead of a SearchView.The SearchBar widget doesn't have the setOnQueryTextListener method; it's only available in SearchView.
+To fix this, you can either replace your SearchBar with a SearchView or handle the SearchBar interactions differently.
+To fix this, you can either replace your SearchBar with a SearchView or handle the SearchBar interactions differently.
+To fix this, you can either replace your SearchBar with a SearchView or handle the SearchBar interactions differently.
+If you want to stick with SearchView, make sure your layout XML has a SearchView widget, and you use that in your code."</string>
+</resources>

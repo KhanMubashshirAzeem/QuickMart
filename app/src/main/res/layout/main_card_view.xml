@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/likeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:src="@drawable/favorite_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/modalMain"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="$ 399"
+        android:textColor="@color/offBlack"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMain" />
+
+    <TextView
+        android:id="@+id/nameMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="Campus Sneaker"
+        android:textColor="@color/offBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceMain" />
+
+    <TextView
+        android:id="@+id/categoryMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="Category"
+        android:textColor="@color/offBlack"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/likeMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMain" />
+
+    <TextView
+        android:id="@+id/modalMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:maxLines="2"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="Model of Campus Sneaker XIIM"
+        android:textColor="@color/offBlack"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/likeMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryMain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
