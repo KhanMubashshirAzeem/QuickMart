@@ -1,6 +1,7 @@
 package com.example.e_com;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.e_com.databinding.ActivityMainBinding;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import org.json.JSONObject;
+
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,30 +33,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Enable Edge-to-Edge UI
+        // Enable Edge-to-Edge UI for modern navigation gestures
         EdgeToEdge.enable(this);
 
-        // Inflate the layout using View Binding
+        // Inflate the layout using View Binding to access the views in the layout
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Set up padding to handle system bars insets (status bar, navigation bar)
+        // Handle system bars insets for better UI experience
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Get the Navigation Host Fragment
+        // Get the FragmentManager to manage fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+
+        // Get the Navigation Host Fragment from the layout
         Fragment navHostFragment = fragmentManager.findFragmentById(R.id.fragmentContainerView);
 
-        // Ensure the NavHostFragment is not null
+        // Check if the fragment is a NavHostFragment instance (NavHostFragment manages navigation within fragments)
         if (navHostFragment instanceof NavHostFragment) {
-            // Get the NavController from the NavHostFragment
+            // Get the NavController from the NavHostFragment to control navigation actions
             NavController navController = ((NavHostFragment) navHostFragment).getNavController();
 
-            // Set up the BottomNavigationView with NavController
+            // Set up the BottomNavigationView to work with NavController for fragment navigation
             NavigationUI.setupWithNavController(binding.bottomNavigationView, navController);
         }
 

@@ -38,11 +38,14 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ImageSwitcher
-                android:id="@+id/imageSwitcherView"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTopProducts"
                 android:layout_width="match_parent"
-                android:layout_height="174dp"
-                android:background="@color/offGrayTrans" />
+                android:layout_height="wrap_content"
+                android:minHeight="174dp"
+                android:background="@color/offGrayTrans"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out" />
 
             <TextView
                 android:layout_width="match_parent"

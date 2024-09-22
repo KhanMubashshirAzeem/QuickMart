@@ -1,0 +1,271 @@
+{
+  "Ecom": {
+    "Products": {
+      "Electronics": {
+        "Product1": {
+          "Category": "Electronics",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917",
+          "Name": "Smartphone A",
+          "Model": "Model A1",
+          "Price": 399.99,
+          "ProductId": "P1001",
+          "Description": "A high-end smartphone with advanced features."
+        },
+        "Product2": {
+          "Category": "Electronics",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Smartphone B",
+          "Model": "Model B1",
+          "Price": 499.99,
+          "ProductId": "P1002",
+          "Description": "A budget-friendly smartphone."
+        },
+        "Product3": {
+          "Category": "Electronics",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Smartwatch A",
+          "Model": "Watch Model A",
+          "Price": 199.99,
+          "ProductId": "P1003",
+          "Description": "A stylish smartwatch with fitness tracking."
+        },
+        "Product4": {
+          "Category": "Electronics",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Laptop A",
+          "Model": "Laptop A1",
+          "Price": 799.99,
+          "ProductId": "P1004",
+          "Description": "A powerful laptop for gaming and work."
+        },
+        "Product5": {
+          "Category": "Electronics",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Tablet A",
+          "Model": "Tablet A1",
+          "Price": 299.99,
+          "ProductId": "P1005",
+          "Description": "A portable tablet for multimedia and productivity."
+        }
+      },
+      "Home Appliances": {
+        "Product6": {
+          "Category": "Home Appliances",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Vacuum Cleaner A",
+          "Model": "Vacuum Model A",
+          "Price": 149.99,
+          "ProductId": "P2001",
+          "Description": "A powerful vacuum cleaner for home cleaning."
+        },
+        "Product7": {
+          "Category": "Home Appliances",
+          "Image": "image_url_7",
+          "Name": "Refrigerator A",
+          "Model": "Fridge A1",
+          "Price": 999.99,
+          "ProductId": "P2002",
+          "Description": "A large refrigerator with freezer."
+        },
+        "Product8": {
+          "Category": "Home Appliances",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Air Conditioner A",
+          "Model": "AC Model A",
+          "Price": 499.99,
+          "ProductId": "P2003",
+          "Description": "Energy-efficient air conditioner."
+        },
+        "Product9": {
+          "Category": "Home Appliances",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Microwave A",
+          "Model": "Microwave A1",
+          "Price": 99.99,
+          "ProductId": "P2004",
+          "Description": "Compact microwave oven."
+        },
+        "Product10": {
+          "Category": "Home Appliances",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Washing Machine A",
+          "Model": "Washing A1",
+          "Price": 699.99,
+          "ProductId": "P2005",
+          "Description": "A high-efficiency washing machine."
+        }
+      },
+      "Fashion": {
+        "Product11": {
+          "Category": "Fashion",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "T-shirt A",
+          "Model": "Shirt A1",
+          "Price": 29.99,
+          "ProductId": "P3001",
+          "Description": "Comfortable cotton t-shirt."
+        },
+        "Product12": {
+          "Category": "Fashion",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Jeans A",
+          "Model": "Jeans A1",
+          "Price": 49.99,
+          "ProductId": "P3002",
+          "Description": "Stylish denim jeans."
+        },
+        "Product13": {
+          "Category": "Fashion",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Sneakers A",
+          "Model": "Sneaker A1",
+          "Price": 89.99,
+          "ProductId": "P3003",
+          "Description": "Casual sneakers for daily wear."
+        },
+        "Product14": {
+          "Category": "Fashion",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Jacket A",
+          "Model": "Jacket A1",
+          "Price": 129.99,
+          "ProductId": "P3004",
+          "Description": "Warm winter jacket."
+        },
+        "Product15": {
+          "Category": "Fashion",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Watch A",
+          "Model": "Watch A1",
+          "Price": 199.99,
+          "ProductId": "P3005",
+          "Description": "Luxury wristwatch."
+        }
+      },
+      "Sports": {
+        "Product16": {
+          "Category": "Sports",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Football A",
+          "Model": "Football A1",
+          "Price": 29.99,
+          "ProductId": "P4001",
+          "Description": "Professional football for outdoor play."
+        },
+        "Product17": {
+          "Category": "Sports",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Basketball A",
+          "Model": "Basketball A1",
+          "Price": 39.99,
+          "ProductId": "P4002",
+          "Description": "Official size basketball."
+        },
+        "Product18": {
+          "Category": "Sports",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Tennis Racket A",
+          "Model": "Racket A1",
+          "Price": 59.99,
+          "ProductId": "P4003",
+          "Description": "Lightweight tennis racket."
+        },
+        "Product19": {
+          "Category": "Sports",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Cricket Bat A",
+          "Model": "Bat A1",
+          "Price": 49.99,
+          "ProductId": "P4004",
+          "Description": "Durable cricket bat for all levels."
+        },
+        "Product20": {
+          "Category": "Sports",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+          "Name": "Running Shoes A",
+          "Model": "Shoes A1",
+          "Price": 99.99,
+          "ProductId": "P4005",
+          "Description": "High-performance running shoes."
+        }
+      },
+      "Beauty": {
+        "Product21": {
+          "Category": "Beauty",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+          "Name": "Face Cream A",
+          "Model": "Cream A1",
+          "Price": 19.99,
+          "ProductId": "P5001",
+          "Description": "Moisturizing face cream."
+        },
+        "Product22": {
+          "Category": "Beauty",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+          "Name": "Shampoo A",
+          "Model": "Shampoo A1",
+          "Price": 12.99,
+          "ProductId": "P5002",
+          "Description": "Nourishing hair shampoo."
+        },
+        "Product23": {
+          "Category": "Beauty",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+          "Name": "Lipstick A",
+          "Model": "Lipstick A1",
+          "Price": 9.99,
+          "ProductId": "P5003",
+          "Description": "Long-lasting lipstick."
+        },
+        "Product24": {
+          "Category": "Beauty",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+          "Name": "Perfume A",
+          "Model": "Perfume A1",
+          "Price": 49.99,
+          "ProductId": "P5004",
+          "Description": "Elegant fragrance for daily wear."
+        },
+        "Product25": {
+          "Category": "Beauty",
+          "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+          "Name": "Body Lotion A",
+          "Model": "Lotion A1",
+          "Price": 15.99,
+          "ProductId": "P5005",
+          "Description": "Hydrating body lotion."
+        }
+      }
+    },
+    "TopProducts": {
+      "Product26": {
+        "Category": "Electronics",
+        "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917",
+        "Name": "Gaming Console A",
+        "Model": "Console A1",
+        "Price": 499.99,
+        "ProductId": "P6001",
+        "Description": "A next-gen gaming console with immersive features."
+      },
+      "Product27": {
+        "Category": "Fashion",
+        "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927",
+        "Name": "Leather Jacket B",
+        "Model": "Jacket B1",
+        "Price": 199.99,
+        "ProductId": "P6002",
+        "Description": "A stylish leather jacket for all seasons."
+      },
+      "Product28": {
+        "Category": "Sports",
+        "Image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+        "Name": "Yoga Mat A",
+        "Model": "Mat A1",
+        "Price": 49.99,
+        "ProductId": "P6003",
+        "Description": "Eco-friendly yoga mat for comfortable workouts."
+      }
+    }
+  }
+}
+

@@ -10,4 +10,6 @@
     <color name="offGrayTrans">#332B2D30</color>
     <color name="offGray">#2B2D30</color>
 
+    <color name="red">#ff0000</color>
+
 </resources>
