@@ -3,16 +3,15 @@ package com.example.e_com.Model;
 public class MainModelItem {
 
     String idItem;
-    int imageItem;
+    String imageItem;  // Change to String for URL
     String priceItem;
     String nameItem;
     String categoryItem;
     String modelItem;
 
-    public MainModelItem() {
-    }
+    public MainModelItem() {}
 
-    public MainModelItem(String idItem, int imageItem, String priceItem, String nameItem, String categoryItem, String modelItem) {
+    public MainModelItem(String idItem, String imageItem, String priceItem, String nameItem, String categoryItem, String modelItem) {
         this.idItem = idItem;
         this.imageItem = imageItem;
         this.priceItem = priceItem;
@@ -29,11 +28,11 @@ public class MainModelItem {
         this.idItem = idItem;
     }
 
-    public int getImageItem() {
+    public String getImageItem() {
         return imageItem;
     }
 
-    public void setImageItem(int imageItem) {
+    public void setImageItem(String imageItem) {
         this.imageItem = imageItem;
     }
 

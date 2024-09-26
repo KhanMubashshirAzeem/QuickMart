@@ -43,43 +43,19 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
         MainModelItem modelItem = itemList.get(position);
 
-        Glide.with(context).load(modelItem.getImageItem()).into(holder.image);
-
+        // Load image from URL using Glide
+        Glide.with(context)
+                .load(modelItem.getImageItem())  // Load the URL
+                .into(holder.image);
 
         holder.name.setText(modelItem.getNameItem());
-        holder.price.setText(modelItem.getPriceItem());
+        holder.price.setText("$" + modelItem.getPriceItem());
         holder.category.setText(modelItem.getCategoryItem());
         holder.model.setText(modelItem.getModelItem());
 
-//        // Set onClickListener for each item
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // Create a new ProductFragment instance
-//                ProductFragment productFragment = new ProductFragment();
-//
-//                // Prepare data to send to the fragment
-//                Bundle bundle = new Bundle();
-//                bundle.putString("product_name", modelItem.getNameItem());
-//                bundle.putString("product_price", modelItem.getPriceItem());
-//                bundle.putString("product_image", modelItem.getImageItem());
-//                bundle.putString("product_category", modelItem.getCategoryItem());
-//                bundle.putString("product_model", modelItem.getModelItem());
-//
-//                // Set the arguments to the fragment
-//                productFragment.setArguments(bundle);
-//
-//                // Perform fragment transaction to replace the current fragment with ProductFragment
-//                FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager();
-//                fragmentManager.beginTransaction()
-//                        .replace(R.id.fragmentContainerView, productFragment)
-//                        .addToBackStack(null)
-//                        .commit();
-//            }
-//        });
-
-
+        // Set onClickListener for each item (if needed)
     }
+
 
 
     @Override
