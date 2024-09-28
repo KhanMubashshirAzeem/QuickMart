@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.e_com.Model.TopProductModel;
+import com.example.e_com.Model.MainModelItem;
 import com.example.e_com.R;
 
 import java.util.List;
@@ -19,9 +19,9 @@ import java.util.List;
 public class TopProductAdapter extends RecyclerView.Adapter<TopProductAdapter.TopProductViewHolder> {
 
     private Context context;
-    private List<TopProductModel> topProductList;
+    private List<MainModelItem> topProductList;
 
-    public TopProductAdapter(Context context, List<TopProductModel> topProductList) {
+    public TopProductAdapter(Context context, List<MainModelItem> topProductList) {
         this.context = context;
         this.topProductList = topProductList;
     }
@@ -35,13 +35,17 @@ public class TopProductAdapter extends RecyclerView.Adapter<TopProductAdapter.To
 
     @Override
     public void onBindViewHolder(@NonNull TopProductViewHolder holder, int position) {
-        TopProductModel product = topProductList.get(position);
-        holder.productName.setText(product.getName());
+        MainModelItem product = topProductList.get(position);
+        holder.productName.setText(product.getTitle());
         holder.productPrice.setText("$" + product.getPrice());
         holder.productCategory.setText(product.getCategory());
-        holder.productModel.setText(product.getModel());
 
+        // Load product image using Glide
         Glide.with(context).load(product.getImage()).into(holder.productImage);
+
+        // Set rating and rating count
+        holder.ratingTop.setText("Rating: " + product.getRating().getRate());
+        holder.ratingCountTop.setText("(" + product.getRating().getCount() + " reviews)");
     }
 
     @Override
@@ -50,18 +54,17 @@ public class TopProductAdapter extends RecyclerView.Adapter<TopProductAdapter.To
     }
 
     public class TopProductViewHolder extends RecyclerView.ViewHolder {
-        TextView productName, productPrice,productModel,productCategory;
-        ImageView productImage,favIcon;
+        TextView productName, productPrice, productCategory, ratingTop, ratingCountTop;
+        ImageView productImage;
 
         public TopProductViewHolder(@NonNull View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.productNameTop);
             productPrice = itemView.findViewById(R.id.productPriceTop);
             productImage = itemView.findViewById(R.id.productImageTop);
-            productModel = itemView.findViewById(R.id.productModelTop);
             productCategory = itemView.findViewById(R.id.productCategoryTop);
-            favIcon = itemView.findViewById(R.id.favoriteIconTop);
-
+            ratingTop = itemView.findViewById(R.id.ratingTop);
+            ratingCountTop = itemView.findViewById(R.id.ratingCountTop);
         }
     }
 }

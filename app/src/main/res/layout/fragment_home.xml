@@ -43,7 +43,6 @@
                 android:id="@+id/recyclerViewTopProducts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="174dp"
                 android:background="@color/offGrayTrans"
                 android:inAnimation="@android:anim/fade_in"
                 android:outAnimation="@android:anim/fade_out" />

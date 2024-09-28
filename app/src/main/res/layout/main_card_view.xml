@@ -7,15 +7,6 @@
     android:layout_margin="8dp">
 
     <ImageView
-        android:id="@+id/likeMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="2dp"
-        android:src="@drawable/favorite_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/modalMain"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
         android:id="@+id/imageMain"
         android:layout_width="165dp"
         android:layout_height="165dp"
@@ -29,70 +20,100 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/priceMain"
+        android:id="@+id/nameMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
         android:paddingStart="8dp"
-        android:paddingTop="2dp"
-        android:text="$ 399"
+        android:text="Product Name"
         android:textColor="@color/offBlack"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageMain" />
 
     <TextView
-        android:id="@+id/nameMain"
+        android:id="@+id/priceMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:layout_marginTop="8dp"
-        android:maxLines="2"
+        android:layout_marginTop="4dp"
         android:paddingStart="8dp"
-        android:paddingTop="2dp"
-        android:text="Campus Sneaker"
+        android:text="$ 99.99"
         android:textColor="@color/offBlack"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceMain" />
+        app:layout_constraintTop_toBottomOf="@+id/nameMain" />
 
     <TextView
         android:id="@+id/categoryMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginTop="4dp"
         android:paddingStart="8dp"
-        android:paddingTop="2dp"
         android:text="Category"
         android:textColor="@color/offBlack"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/likeMain"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameMain" />
+        app:layout_constraintTop_toBottomOf="@+id/priceMain" />
 
     <TextView
         android:id="@+id/modalMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginTop="4dp"
         android:maxLines="2"
+        android:minLines="2"
         android:paddingStart="8dp"
-        android:paddingTop="2dp"
-        android:text="Model of Campus Sneaker XIIM"
+        android:text="Model"
         android:textColor="@color/offBlack"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/likeMain"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categoryMain" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modalMain">
+
+        <TextView
+            android:id="@+id/ratingMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="Rating: 3.9"
+            android:textColor="@color/offBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ratingCountMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="120 Ratings"
+            android:textColor="@color/offBlack"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/likeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:src="@drawable/favorite_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

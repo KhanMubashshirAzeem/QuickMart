@@ -1,8 +1,6 @@
 package com.example.e_com.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,15 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.e_com.Fragment.ProductFragment;
 import com.example.e_com.Model.MainModelItem;
 import com.example.e_com.R;
-import com.example.e_com.databinding.FragmentProductBinding;
 
 import java.util.List;
 
@@ -35,6 +29,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
     @NonNull
     @Override
     public MainViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each item in the RecyclerView
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_card_view, parent, false);
         return new MainViewHolder(view);
     }
@@ -45,36 +40,40 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
         // Load image from URL using Glide
         Glide.with(context)
-                .load(modelItem.getImageItem())  // Load the URL
+                .load(modelItem.getImage())
                 .into(holder.image);
 
-        holder.name.setText(modelItem.getNameItem());
-        holder.price.setText("$" + modelItem.getPriceItem());
-        holder.category.setText(modelItem.getCategoryItem());
-        holder.model.setText(modelItem.getModelItem());
+        // Set text for the views
+        holder.name.setText(modelItem.getTitle());
+        holder.price.setText("$" + modelItem.getPrice());
+        holder.category.setText(modelItem.getCategory());
+        holder.model.setText("Model: " + modelItem.getDescription());
 
-        // Set onClickListener for each item (if needed)
+        // Set rating and count separately
+        holder.rating.setText("" + modelItem.getRating().getRate());
+        holder.ratingCount.setText("(" + modelItem.getRating().getCount() + " reviews)");
     }
-
-
 
     @Override
     public int getItemCount() {
-        return itemList.size();
+        return itemList.size();  // Return the total number of items in the list
     }
 
     public static class MainViewHolder extends RecyclerView.ViewHolder {
         ImageView image, like;
-        TextView price, name, category, model;
+        TextView price, name, category, model, rating, ratingCount;
 
         public MainViewHolder(@NonNull View itemView) {
             super(itemView);
+            // Initialize views
             image = itemView.findViewById(R.id.imageMain);
             like = itemView.findViewById(R.id.likeMain);
             price = itemView.findViewById(R.id.priceMain);
             name = itemView.findViewById(R.id.nameMain);
             category = itemView.findViewById(R.id.categoryMain);
             model = itemView.findViewById(R.id.modalMain);
+            rating = itemView.findViewById(R.id.ratingMain);
+            ratingCount = itemView.findViewById(R.id.ratingCountMain);
         }
     }
 }

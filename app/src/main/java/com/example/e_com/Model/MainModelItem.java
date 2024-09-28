@@ -1,70 +1,114 @@
 package com.example.e_com.Model;
 
 public class MainModelItem {
+    private int id;
+    private String title;
+    private double price;
+    private String description;
+    private String category;
+    private String image;
+    private Rating rating;
 
-    String idItem;
-    String imageItem;  // Change to String for URL
-    String priceItem;
-    String nameItem;
-    String categoryItem;
-    String modelItem;
-
-    public MainModelItem() {}
-
-    public MainModelItem(String idItem, String imageItem, String priceItem, String nameItem, String categoryItem, String modelItem) {
-        this.idItem = idItem;
-        this.imageItem = imageItem;
-        this.priceItem = priceItem;
-        this.nameItem = nameItem;
-        this.categoryItem = categoryItem;
-        this.modelItem = modelItem;
+    public MainModelItem(int id, String title, double price, String description, String category, String image, Rating rating) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+        this.image = image;
+        this.rating = rating;
     }
 
-    public String getIdItem() {
-        return idItem;
+    // Getters and setters...
+
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdItem(String idItem) {
-        this.idItem = idItem;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getImageItem() {
-        return imageItem;
+    public String getTitle() {
+        return title;
     }
 
-    public void setImageItem(String imageItem) {
-        this.imageItem = imageItem;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getPriceItem() {
-        return priceItem;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPriceItem(String priceItem) {
-        this.priceItem = priceItem;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getNameItem() {
-        return nameItem;
+    public String getDescription() {
+        return description;
     }
 
-    public void setNameItem(String nameItem) {
-        this.nameItem = nameItem;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getCategoryItem() {
-        return categoryItem;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategoryItem(String categoryItem) {
-        this.categoryItem = categoryItem;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
-    public String getModelItem() {
-        return modelItem;
+    public String getImage() {
+        return image;
     }
 
-    public void setModelItem(String modelItem) {
-        this.modelItem = modelItem;
+    public void setImage(String image) {
+        this.image = image;
     }
+
+    public Rating getRating() {
+        return rating;
+    }
+
+    public void setRating(Rating rating) {
+        this.rating = rating;
+    }
+
+
+
+
+    public static class Rating {
+        private double rate;
+        private int count;
+
+        public Rating(double rate, int count) {
+            this.rate = rate;
+            this.count = count;
+        }
+
+        // Getters and setters...
+
+        public double getRate() {
+            return rate;
+        }
+
+        public void setRate(double rate) {
+            this.rate = rate;
+        }
+
+        public int getCount() {
+            return count;
+        }
+
+        public void setCount(int count) {
+            this.count = count;
+        }
+    }
+
+
+
 }
